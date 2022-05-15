@@ -1,0 +1,162 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #101935;
+  text-align: center;
+  margin: 0;
+}
+
+/*header, main, footer { 
+  width: 100%;
+}*/
+
+/* =========== HEADER =========== */
+
+header {
+  background-color: #003366;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-wrapper, .footer-wrapper, .square-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  padding: 0.8rem;
+}
+
+nav a {
+  color: #DAE0F2;
+  font-size: 1em;
+}
+
+/* =========== MAIN =========== */
+
+main {
+  position: relative;
+  margin-top: -40px;
+  background-image: url("images/BackgroundPlayer.jpg");
+}
+
+main.events {
+  background-image: url("images/backgroundFight.jpg");
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+img.portraitPicture, img.landscapePicsEvents {
+  max-width: 700px;
+}
+
+.matchAnnouncement {
+  width: 95%;
+  height: auto;
+}
+
+.container p {
+  width: 80%;
+  max-width: 700px; 
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3em; 
+}
+h2 {
+  font-size: 2em; 
+}
+h3 {
+  font-size: 1.8em; 
+} 
+.withoutH4 {
+  font-size: 1.5em; 
+}
+h4 {
+  font-size: 1.5em; 
+}
+.squareFixed {
+  width: 50px;
+  height: 70px;
+  background-color: #101935;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  justify-content: space-evenly;
+  border-radius: 50%;
+}
+.squareFixed i {
+  font-size: 3em;
+  color: #EFE9E7;
+}
+.squareFixed a {
+  font-size: 0.5em;
+  color: #EFE9E7;
+}
+
+/* =========== FOOTER =========== */
+
+footer {
+  background-color: #ed1c24;
+  color: #EFE9E7;
+  font-size: 1.8em;
+}
+
+/* =========== RESPONSIVE =========== */
+
+@media screen and (min-width: 500px) {
+  nav a {
+    font-size: 1.5em;
+  } 
+  .logo {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    flex-direction: column;
+  }
+  .logo-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .squareFixed {
+    width: 100px;
+    height: 140px;
+  }
+  .squareFixed i {
+    font-size: 4em;
+    color: #EFE9E7;
+  }
+  .squareFixed a {
+    font-size: 0.8em;
+    color: #EFE9E7;
+  }
+}
