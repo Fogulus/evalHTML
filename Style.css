@@ -147,16 +147,4 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
-  .squareFixed {
-    width: 100px;
-    height: 140px;
-  }
-  .squareFixed i {
-    font-size: 4em;
-    color: #EFE9E7;
-  }
-  .squareFixed a {
-    font-size: 0.8em;
-    color: #EFE9E7;
-  }
 }
