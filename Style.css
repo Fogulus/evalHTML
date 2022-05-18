@@ -13,7 +13,7 @@ header {
   justify-content: center;
 }
 
-.logo-wrapper, .footer-wrapper, .square-wrapper{
+.logo-wrapper, .footer-wrapper, .back-top-wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,7 +99,7 @@ h3 {
 h4 {
   font-size: 1.5em; 
 }
-.square-fixed {
+.back-top-fixed {
   width: 50px;
   height: 70px;
   background-color: #101935;
@@ -109,13 +109,14 @@ h4 {
   justify-content: space-evenly;
   border-radius: 50%;
 }
-.square-fixed i {
+.back-top-fixed i {
   font-size: 3em;
   color: #EFE9E7;
 }
-.square-fixed a {
-  font-size: 0.5em;
+.back-top-fixed a {
+  font-size: 0.8em;
   color: #EFE9E7;
+  text-decoration: none;
 }
 
 /* =========== FOOTER =========== */
