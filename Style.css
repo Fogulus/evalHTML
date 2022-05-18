@@ -69,11 +69,11 @@ img {
   flex-wrap: wrap;
 }
 
-img.portraitPicture, img.landscapePicsEvents {
+img.portrait-picture, img.landscape-pics-events {
   max-width: 700px;
 }
 
-.matchAnnouncement {
+.match-announcement {
   width: 95%;
   height: auto;
 }
@@ -93,13 +93,13 @@ h2 {
 h3 {
   font-size: 1.8em; 
 } 
-.withoutH4 {
+.without-h4 {
   font-size: 1.5em; 
 }
 h4 {
   font-size: 1.5em; 
 }
-.squareFixed {
+.square-fixed {
   width: 50px;
   height: 70px;
   background-color: #101935;
@@ -109,11 +109,11 @@ h4 {
   justify-content: space-evenly;
   border-radius: 50%;
 }
-.squareFixed i {
+.square-fixed i {
   font-size: 3em;
   color: #EFE9E7;
 }
-.squareFixed a {
+.square-fixed a {
   font-size: 0.5em;
   color: #EFE9E7;
 }
@@ -126,36 +126,12 @@ footer {
   font-size: 1.8em;
 }
 
-/* =========== RESPONSIVE =========== */
-
-@media screen and (min-width: 500px) {
-  nav a {
-    font-size: 1.5em;
-  } 
-  .logo {
-    width: 300px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  header {
-    flex-direction: column;
-  }
-  .logo-wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-
 /* =========== FENETRE MODALE =========== */
-/* Décrire l'animation */
 @keyframes slideDownFadeIN {
   from {top:-100px;opacity: 0;}
   to {top:0px;opacity:1;}
 }
 
-/* Foncer l'arrière-plan de la fenêtre modale */
 .modal {
 display: none; 
 left: 0;
@@ -167,19 +143,16 @@ background-color: rgb(0, 0, 0);
 background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Afficher la fenêtre modale lorsqu'elle est ciblée par un lien supprimer */
 .modal:target {
 display: table;
 position: absolute;
 }
 
-/* la fenêtre modale  */
 .modal-dialog {
 display: table-cell;
 vertical-align: top;
 }
 
-/* Le contenu de la modale */
 .modal-dialog .modal-content {
 margin: auto;
 background-color: #f3f3f3;
@@ -194,7 +167,6 @@ animation-name: slideDownFadeIN;
 animation-duration: 0.5s;
 }
 
-/* Bouton servant à fermer la fenêtre modale */
 .closebtn {
 text-decoration: none;
 float: right;
@@ -209,13 +181,6 @@ color: #000;
 text-decoration: none;
 cursor: pointer;
 }
-
-.modal-container {
-padding: 2px 16px;
-font-size: 25px;
-color: white;
-}
-
 
 /* =========== FORMULAIRE =========== */
 form {
@@ -251,7 +216,7 @@ form input, form textarea {
 }
 
 /* =========== BOUTON =========== */
-.styled {
+.submit-button {
   border: 0;
   line-height: 2.5;
   margin: 15px;
@@ -269,12 +234,34 @@ form input, form textarea {
               inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-.styled:hover {
+.submit-button:hover {
   background-color: rgba(255, 0, 0, 1);
   cursor: pointer;
 }
 
-.styled:active {
+.submit-button:active {
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
               inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+/* =========== RESPONSIVE =========== */
+
+@media screen and (min-width: 500px) {
+  nav a {
+    font-size: 1.5em;
+  } 
+  .logo {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    flex-direction: column;
+  }
+  .logo-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
